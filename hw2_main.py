@@ -1,6 +1,6 @@
-import math
+#cse 4283 assignment 2
 
-def BMI():
+def BMI():  #BMI calculator function
     print("Body Mass Index Calculator: Select an option \n0:Calculate BMI \n1:exit")
     while(1):
         BMI_choice = input(": ")
@@ -23,11 +23,11 @@ def BMI():
             elif bmi >= 30:
                 category = "obese"
             print("BMI:",bmi, category)
-            BMI()
+            BMI()  #returns to allow for exit or to calculate again
         elif BMI_choice == "1":
-            main()
+            main() #returns to main menu
 
-def retirement():
+def retirement(): #retirement age calculator
     print("Retirement Age Calculator: Select an option \n0:Claculate age \n1:exit")
     while(1):
         r_choice = input(":")
@@ -42,20 +42,20 @@ def retirement():
             while total_savings < goal:
                 total_savings = total_savings + yearly_savings
                 age += 1
-            if age >= 100:
+            if age >= 100: #life expectancy assumed to be less than 100
                 print("Savings goal can not be met.")
             else:
                 print("Savings goal will be met at age",age)
 
             
-            retirement()
+            retirement()#returns to function menu
 
         elif r_choice == "1":
-            main()
+            main() #returns to main menu
         
 
 
-def main():
+def main(): #main menu function
     print("Welcome! Please select a function: \n0:Body Mass Index Calculator \n1:Retirement Calculator \n2:Exit")
 
     while(1):
@@ -67,7 +67,7 @@ def main():
             retirement()
             break
         elif choice == "2":
-            break
+            break     #program can be exited here
     print("Goodbye!")
 
 
