@@ -28,7 +28,7 @@ def BMI():  #BMI calculator function
             main() #returns to main menu
 
 def retirement(): #retirement age calculator
-    print("Retirement Age Calculator: Select an option \n0:Claculate age \n1:exit")
+    print("Retirement Age Calculator: Select an option \n0:Calculate age \n1:exit")
     while(1):
         r_choice = input(":")
         if r_choice == "0":
